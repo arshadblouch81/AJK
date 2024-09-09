@@ -66,7 +66,7 @@ def main():
     
       
     model = ChatOpenAI(model="gpt-3.5-turbo")
-    MYPATH = "C:/Users/Arshad/langchain/docs/Kashmir Digital Policy 2024-2030 Sept 6.pdf"
+    MYPATH = "Kashmir Digital Policy 2024-2030 Sept 6.pdf"
     pdf_path = MYPATH
     documents = get_file_text(pdf_path)
     vectorstore2 = Chroma.from_documents(
